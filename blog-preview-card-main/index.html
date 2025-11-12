@@ -10,9 +10,98 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&family=Pacifico&family=Splash&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Frontend Mentor | Blog preview card</title>
-    <style></style>
+    <style>
+      body {
+        background-color: hsl(47, 88%, 63%);
+        display: flex;
+        font-family: "Figtree", sans-serif;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        background-color: hsl(0, 0%, 100%);
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        height: 500px;
+        width: 340px;
+        border: 1px solid hsl(0, 0%, 7%);
+        border-radius: 2%;
+        box-shadow: inset;
+      }
+      div > img {
+        border-radius: 4%;
+      }
+      .learning {
+        padding: 10px;
+        border-radius: 5%;
+        margin: 1rem 0 1rem 0;
+        align-items: center;
+        width: fit-content;
+        justify-content: center;
+        display: flex;
+        color: hsl(0, 0%, 7%);
+        font-weight: bolder;
+        background-color: hsl(47, 88%, 63%);
+      }
+      p {
+        font-size: 16px;
+        color: hsl(0, 0%, 42%);
+        line-height: 180%;
+        font-weight: 500;
+      }
+      .title {
+        font-weight: 800;
+        font-size: 20px;
+        color: hsl(0, 0%, 7%);
+        margin: 1rem 0 1px;
+      }
+      .avatar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+      }
+      .avatar > img {
+        height: 30px;
+        width: 30px;
+      }
+      .avatar > p {
+        color: hsl(0, 0%, 7%);
+        font-weight: 800;
+      }
+      .title:hover {
+        color: hsl(47, 88%, 63%);
+        cursor: pointer;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div>
+        <img src="./assets/images/illustration-article.svg" alt="Book image" />
+      </div>
+      <div class="learning">Learning</div>
+      <div>Published 21 December 2023</div>
+      <div class="title">HTML & CSS Fundamentals</div>
+      <div>
+        <p>
+          These languages are the backbone of every website defining structure,
+          content and presentation
+        </p>
+      </div>
+      <div class="avatar">
+        <img src="./assets/images/image-avatar.webp" />
+        <p>Greg Hooper</p>
+      </div>
+    </div>
+  </body>
 </html>
